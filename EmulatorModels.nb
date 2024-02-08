@@ -1,0 +1,2886 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    120213,       2876]
+NotebookOptionsPosition[    119752,       2861]
+NotebookOutlinePosition[    120156,       2877]
+CellTagsIndexPosition[    120113,       2874]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ModelC", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Gds$M23", "+", "Gds$M24", "+", "gm$M23", "+", "gm$M24"}], 
+       ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+        RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+        RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+        RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+        RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+        RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+        RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"(", 
+               RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}]}], " ", "Gds$M8", 
+             " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}], " ", "gm$M1", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+", 
+               "gm$M8"}], ")"}]}]}], ")"}]}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Gds$M8", " ", "gm$M8"}], "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M2", "+", "Gds$M8", "+", "gm$M2"}], ")"}], " ", 
+               "gm$M8"}]}], ")"}]}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+           RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+           RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+           RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+           RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+           RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+           RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", "Gds$M8"}], "+", 
+           RowBox[{"gm$M1", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}], " ", "Gds$M7"}], 
+              "-", 
+              RowBox[{"gm$M3", " ", "gm$M8"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+      " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Gds$M21", " ", 
+         RowBox[{"(", 
+          RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+         "gm$M16", " ", 
+         RowBox[{"(", 
+          RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}]}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+            "gm$M16", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+               "gm$M21"}], "-", 
+              RowBox[{"gm$M21", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", "+",
+                  "gm$M22"}], ")"}]}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}]}]}], 
+          ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+          ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+         "gm$M16", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+            "gm$M21"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M22", " ", "gm$M16", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+             ")"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+            "gm$M16", " ", 
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", "+", 
+              "gm$M22"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+             ")"}]}]}], ")"}]}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"Gds$M12", "+", "Gds$M5", "+", 
+        RowBox[{"C1", " ", "s"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+          ")"}], " ", 
+         SuperscriptBox["gm$M1", "2"], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], "2"], 
+         " ", "gm$M16", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+            "gm$M21"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], "2"], 
+         " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M36", " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+            SuperscriptBox["gm$M8", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+             ")"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+             ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", "+", 
+              "gm$M36"}], ")"}], " ", 
+            SuperscriptBox["gm$M8", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+             ")"}]}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M33", "+", "Gds$M38"}], ")"}]}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+             ")"}], " ", 
+            SuperscriptBox["gm$M1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+             ")"}], " ", "gm$M34", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "Gds$M35"}], " ", "gm$M35"}], "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M31", "+", "Gds$M35"}], ")"}], " ", "gm$M35"}]}],
+              ")"}], " ", 
+            SuperscriptBox["gm$M8", "3"], " ", "VIN"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+             ")"}], " ", 
+            SuperscriptBox["gm$M1", "2"], " ", "gm$M33", " ", "gm$M34", " ", 
+            "gm$M8", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                ")"}], " ", "gm$M35", " ", "gm$M36", " ", 
+               SuperscriptBox["gm$M8", "2"], " ", "VIN"}], "-", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                 RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36", 
+               " ", 
+               SuperscriptBox["gm$M8", "2"], " ", "VIN"}]}], ")"}]}]}], 
+          ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+          ")"}], " ", 
+         SuperscriptBox["gm$M1", "2"], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], "2"], 
+         " ", "gm$M16", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+            "gm$M21"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], "2"], 
+         " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+               RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+            SuperscriptBox["gm$M8", "2"]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+             ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+               "gm$M35"}], "+", 
+              RowBox[{"gm$M35", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", "+",
+                  "gm$M36"}], ")"}]}]}], ")"}], " ", 
+            SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Gds$M35", " ", 
+            RowBox[{"(", 
+             RowBox[{"Gds$M33", "+", "Gds$M38"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+             ")"}], " ", 
+            SuperscriptBox["gm$M1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+             ")"}], " ", "gm$M34", " ", 
+            SuperscriptBox["gm$M8", "3"], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+             ")"}], " ", "VIN"}], "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+             "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+             ")"}], " ", 
+            SuperscriptBox["gm$M1", "2"], " ", "gm$M33", " ", "gm$M34", " ", 
+            "gm$M8", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Gds$M36", " ", "gm$M36", " ", 
+               SuperscriptBox["gm$M8", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+                ")"}], " ", "VIN"}], "+", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                ")"}], " ", "gm$M36", " ", 
+               SuperscriptBox["gm$M8", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+                ")"}], " ", "VIN"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], ")"}], 
+    "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"Gds$M23", "+", "Gds$M24", "+", "gm$M23", "+", "gm$M24"}], 
+         ")"}]}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               RowBox[{"(", 
+                RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}]}], " ", "Gds$M8", 
+              " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], "-", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}], " ", "gm$M1", " ", 
+              RowBox[{"(", 
+               RowBox[{
+               "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+", 
+                "gm$M8"}], ")"}]}]}], ")"}]}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M8", " ", "gm$M8"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M2", "+", "Gds$M8", "+", "gm$M2"}], ")"}], " ", 
+                "gm$M8"}]}], ")"}]}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"(", 
+               RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}]}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", "Gds$M8"}], "+", 
+            RowBox[{"gm$M1", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M10", "+", "Gds$M3"}], ")"}], " ", "Gds$M7"}], 
+               "-", 
+               RowBox[{"gm$M3", " ", "gm$M8"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+        " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Gds$M21", " ", 
+          RowBox[{"(", 
+           RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+          "gm$M16", " ", 
+          RowBox[{"(", 
+           RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}]}], 
+            "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+             "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                "gm$M21"}], "-", 
+               RowBox[{"gm$M21", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                  "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}]}]}], 
+           ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+           ")"}]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+          "gm$M16", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+             "gm$M21"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M22", " ", "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+              ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+             "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", "+", 
+               "gm$M22"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+              ")"}]}]}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}],
+            ")"}], " ", 
+          SuperscriptBox["gm$M1", "2"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], "2"], 
+          " ", "gm$M16", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+             "gm$M21"}]}], ")"}], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], "2"], 
+          " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"(", 
+               RowBox[{
+               "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+               ")"}]}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+              ")"}], " ", "gm$M34", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "Gds$M35"}], " ", "gm$M35"}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M31", "+", "Gds$M35"}], ")"}], " ", 
+                "gm$M35"}]}], ")"}], " ", 
+             SuperscriptBox["gm$M8", "3"], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M33", "+", "Gds$M38"}], ")"}], " ", "R1"}]}], 
+              ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+              ")"}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", "gm$M33", " ", "gm$M34", " ", 
+             "gm$M8", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", "gm$M35", " ", "gm$M36", " ", 
+                SuperscriptBox["gm$M8", "2"], " ", "R1"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                  RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36", 
+                " ", 
+                SuperscriptBox["gm$M8", "2"], " ", "R1"}]}], ")"}]}]}], ")"}],
+           " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M36", " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+             SuperscriptBox["gm$M8", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+              ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+              ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", "+", 
+               "gm$M36"}], ")"}], " ", 
+             SuperscriptBox["gm$M8", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+              ")"}]}]}], ")"}]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}],
+            ")"}], " ", 
+          SuperscriptBox["gm$M1", "2"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], "2"], 
+          " ", "gm$M16", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], " ", 
+             "gm$M21"}]}], ")"}], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], "2"], 
+          " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+             SuperscriptBox["gm$M8", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+              ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                "gm$M35"}], "+", 
+               RowBox[{"gm$M35", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                  "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+             SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M35", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+              ")"}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+              ")"}], " ", "gm$M34", " ", 
+             SuperscriptBox["gm$M8", "3"], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M33", "+", "Gds$M38"}], ")"}], " ", "R1"}]}], 
+              ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}], 
+              ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+              ")"}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", "gm$M33", " ", "gm$M34", " ", 
+             "gm$M8", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M36", " ", "gm$M36", " ", 
+                SuperscriptBox["gm$M8", "2"], " ", "R1", " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                  ")"}]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", "gm$M36", " ", 
+                SuperscriptBox["gm$M8", "2"], " ", "R1", " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                  ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"Gds$M12", "+", "Gds$M5", "+", 
+         RowBox[{"C1", " ", "s"}]}], ")"}]}], "+", 
+      RowBox[{"gm$M1", " ", "gm$M8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+         RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+         RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Gds$M23", "+", "Gds$M24", "+", "gm$M23", "+", "gm$M24"}], 
+           ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M8", " ", "gm$M8"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M2", "+", "Gds$M8", "+", "gm$M2"}], ")"}], " ", 
+                "gm$M8"}]}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Gds$M21", " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+             "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}]}], 
+               "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+                " ", "gm$M16", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                   "gm$M21"}], "-", 
+                  RowBox[{"gm$M21", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                 ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"1", "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+              ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], " ", 
+             "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], 
+                " ", "gm$M21"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M22", " ", "gm$M16", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+                " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                 ")"}]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+                " ", "gm$M16", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                  "+", "gm$M22"}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+                " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                 ")"}]}]}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+              ")"}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+              "2"], " ", "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], 
+                " ", "gm$M21"}]}], ")"}], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+              "2"], " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                 ")"}], " ", "gm$M1", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", "gm$M34", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "Gds$M35"}], " ", "gm$M35"}], "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M31", "+", "Gds$M35"}], ")"}], " ", 
+                   "gm$M35"}]}], ")"}], " ", 
+                SuperscriptBox["gm$M8", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}]}], " ", 
+                   "Gds$M8", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}], " ", 
+                   "gm$M1", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}]}]}], ")"}]}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                 ")"}], " ", "gm$M1", " ", "gm$M33", " ", "gm$M34", " ", 
+                "gm$M8", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M35", " ", "gm$M36", " ", "gm$M8"}], "-", 
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36",
+                     " ", "gm$M8"}]}], ")"}]}], "+", 
+                  RowBox[{"gm$M1", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}]}], " ", "gm$M35", " ", "gm$M36", " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36",
+                     " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M36", " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                SuperscriptBox["gm$M8", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                  ")"}]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                  "+", "gm$M36"}], ")"}], " ", 
+                SuperscriptBox["gm$M8", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                  ")"}]}]}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+              ")"}], " ", 
+             SuperscriptBox["gm$M1", "2"], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+              "2"], " ", "gm$M16", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}], 
+                " ", "gm$M21"}]}], ")"}], " ", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+              "2"], " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                   RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                SuperscriptBox["gm$M8", "2"]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                   "gm$M35"}], "+", 
+                  RowBox[{"gm$M35", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+                SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "Gds$M35"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                 ")"}], " ", "gm$M1", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", "gm$M34", " ", 
+                SuperscriptBox["gm$M8", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}]}], " ", 
+                   "Gds$M8", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}], " ", 
+                   "gm$M1", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                  ")"}]}], "-", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                 ")"}], " ", "gm$M1", " ", "gm$M33", " ", "gm$M34", " ", 
+                "gm$M8", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M7"}], "-", "gm$M7"}], ")"}]}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    "Gds$M36", " ", "Gds$M8", " ", "gm$M36", " ", "gm$M8", 
+                    " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "+", 
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M36", " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}]}], ")"}]}], "+", 
+                  RowBox[{"gm$M1", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M36", " ", "gm$M8", 
+                    " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M36", " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M7", "+", "Gds$M8", "+", "Gds$M9", "+", "gm$M7", "+",
+                     "gm$M8"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"Gds$M12", "+", "Gds$M5", "+", 
+            RowBox[{"C1", " ", "s"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "Gds$M2"}], " ", "Gds$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M7", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M9", " ", "gm$M1", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M7", " ", "gm$M2", " ", "gm$M8"}], "-", 
+            RowBox[{"Gds$M2", " ", "gm$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"gm$M1", " ", "gm$M7", " ", "gm$M8"}], "-", 
+            RowBox[{"gm$M2", " ", "gm$M7", " ", "gm$M8"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"gm$M23", " ", "gm$M5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{
+                  "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                  ")"}], "2"], " ", 
+                SuperscriptBox["gm$M1", "4"], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+                 "2"], " ", "gm$M16", " ", "gm$M17", " ", "gm$M21", " ", 
+                "gm$M25", " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+                 "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}], 
+                 ")"}], " ", 
+                SuperscriptBox["gm$M33", "2"], " ", 
+                SuperscriptBox["gm$M34", "2"], " ", "gm$M35", " ", 
+                SuperscriptBox["gm$M8", "4"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}], "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                    "gm$M35"}], "+", 
+                    RowBox[{"gm$M35", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"Gds$M21", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                    "gm$M21"}], "-", 
+                    RowBox[{"gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}]}], ")"}]}]}], ")"}], " ", "R3"}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                 "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                 ")"}], " ", 
+                SuperscriptBox["gm$M1", "2"], " ", "gm$M33", " ", "gm$M34", 
+                " ", "gm$M8", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}], "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                    "gm$M35"}], "+", 
+                    RowBox[{"gm$M35", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"Gds$M21", " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     "2"], " ", 
+                   SuperscriptBox["gm$M16", "2"], " ", "gm$M21", " ", 
+                   "gm$M25", " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}], "-", 
+                  RowBox[{
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     "2"], " ", 
+                   SuperscriptBox["gm$M16", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", "gm$M25", " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}]}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M17", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                    "gm$M21"}], "-", 
+                    RowBox[{"gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M33", " ", "gm$M34", " ", "gm$M35", " ", 
+                   SuperscriptBox["gm$M8", "3"], " ", "R3"}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", 
+                   SuperscriptBox["gm$M16", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", "gm$M27", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M33", " ", "gm$M34", " ", "gm$M35", " ", 
+                   SuperscriptBox["gm$M8", "3"], " ", "R3"}]}], ")"}]}]}], 
+              ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+              "Gds$M23", "+", "Gds$M24", "+", "gm$M23", "+", "gm$M24"}], 
+              ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 RowBox[{"(", 
+                  RowBox[{
+                  "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", "Gds$M6"}], 
+                  ")"}]}], " ", 
+                SuperscriptBox["gm$M1", "2"], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}], 
+                 "2"], " ", 
+                SuperscriptBox["gm$M16", "2"], " ", "gm$M21", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                    " ", "gm$M21"}]}], ")"}], " ", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}], 
+                 "2"], " ", "gm$M33", " ", "gm$M34", " ", "gm$M4", " ", 
+                "gm$M8", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}], "+", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                    "gm$M35"}], "+", 
+                    RowBox[{"gm$M35", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+                   SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", "R2", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}]}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M17", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                    "gm$M21"}], "-", 
+                    RowBox[{"gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M33", " ", "gm$M34", " ", "gm$M35", " ", 
+                   SuperscriptBox["gm$M8", "3"], " ", "R3"}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", 
+                   SuperscriptBox["gm$M16", "2"], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", "gm$M27", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M33", " ", "gm$M34", " ", "gm$M35", " ", 
+                   SuperscriptBox["gm$M8", "3"], " ", "R3"}]}], ")"}]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"Gds$M21", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", "gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M21"}], "-", "gm$M21"}], ")"}]}], " ", 
+                    "gm$M21"}], "-", 
+                    RowBox[{"gm$M21", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], 
+                    ")"}]}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                    " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M22", " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M22"}], "-", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     " ", "gm$M16", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M21", "+", "Gds$M22", "+", "Gds$M25", "+", "gm$M21", 
+                    "+", "gm$M22"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M11", "+", "Gds$M4"}], ")"}], " ", "R2"}]}], 
+                    ")"}]}]}], ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     "2"], " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     "2"], " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", "gm$M1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], " ", "gm$M35"}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M31", "+", "Gds$M35"}], ")"}], " ", 
+                    "gm$M35"}]}], ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}]}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", "Gds$M8"}],
+                     "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}], " ", 
+                    "Gds$M7", " ", "gm$M1"}]}], ")"}], " ", "gm$M34"}], "-", 
+                    RowBox[{
+                    "gm$M1", " ", "gm$M33", " ", "gm$M6", " ", "gm$M8"}]}], 
+                    ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", "gm$M1", " ", "gm$M33", " ", 
+                    "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "gm$M1"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], " ", "gm$M35"}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M31", "+", "Gds$M35"}], ")"}], " ", 
+                    "gm$M35"}]}], ")"}], " ", "gm$M6", " ", 
+                    SuperscriptBox["gm$M8", "2"]}], "+", 
+                    RowBox[{"gm$M34", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"gm$M1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M7", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M35", " ", "gm$M36", " ", "gm$M8"}], "-", 
+                    RowBox[{"Gds$M7", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36",
+                     " ", "gm$M8"}]}], ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M35", " ", "gm$M36", " ", "gm$M8"}], "-", 
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}], " ", "gm$M36",
+                     " ", "gm$M8"}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}],
+                    " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M36", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}]}], ")"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", 
+                   SuperscriptBox["gm$M1", "2"], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M15", "+", "Gds$M22", "+", "gm$M15"}], ")"}],
+                     "2"], " ", "gm$M16", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M21", " ", "gm$M21"}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M14", "+", "Gds$M21", "+", "gm$M14"}], ")"}],
+                     " ", "gm$M21"}]}], ")"}], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M16", "+", "Gds$M26", "+", "gm$M26"}], ")"}],
+                     "2"], " ", "gm$M33", " ", "gm$M34", " ", "gm$M8", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M36"}], " ", "gm$M35"}], "+", 
+                    RowBox[{"gm$M31", " ", "gm$M35"}]}], ")"}]}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M36", "+", "gm$M36"}], ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], "-", "gm$M35"}], ")"}], " ", 
+                    "gm$M35"}], "+", 
+                    RowBox[{"gm$M35", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M35", "+", "Gds$M36", "+", "Gds$M37", "+", "gm$M35", 
+                    "+", "gm$M36"}], ")"}]}]}], ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"]}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "Gds$M35"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", "gm$M1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", 
+                    SuperscriptBox["gm$M8", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}]}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", "Gds$M8"}],
+                     "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M33"}], "-", "Gds$M38"}], ")"}], " ", 
+                    "Gds$M7", " ", "gm$M1"}]}], ")"}], " ", "gm$M34"}], "-", 
+                    RowBox[{
+                    "gm$M1", " ", "gm$M33", " ", "gm$M6", " ", "gm$M8"}]}], 
+                    ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    "Gds$M13", "+", "Gds$M34", "+", "Gds$M39", "+", 
+                    "Gds$M6"}], ")"}], " ", "gm$M1", " ", "gm$M33", " ", 
+                    "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Gds$M35", " ", "gm$M1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M6", " ", 
+                    SuperscriptBox["gm$M8", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "+", 
+                    RowBox[{"gm$M34", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"gm$M1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    "Gds$M36", " ", "Gds$M7", " ", "gm$M36", " ", "gm$M8", 
+                    " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "+", 
+                    RowBox[{"Gds$M7", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M36", " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}]}], ")"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M1", "+", "Gds$M7"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    "Gds$M36", " ", "Gds$M8", " ", "gm$M36", " ", "gm$M8", 
+                    " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}], "+", 
+                    RowBox[{"Gds$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "Gds$M32"}], "-", "Gds$M36", "-", "gm$M32"}],
+                     ")"}], " ", "gm$M36", " ", "gm$M8", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"Gds$M17", "+", "Gds$M27"}], ")"}], " ", "R3"}]}],
+                     ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+                 ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"Gds$M12", "+", "Gds$M5", "+", 
+               RowBox[{"C1", " ", "s"}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+     ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.916424780092929*^9, 
+  3.9164247831067715`*^9}},ExpressionUUID->"0273da65-d647-43d6-8e69-\
+0c7ccf018422"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ModelS", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"432279.", " ", 
+      RowBox[{"Gds$M8", "^", "2"}], " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1.", " ", "Gds$M8"}], "+", 
+         RowBox[{"0.325524", " ", "gm$M21"}]}], ")"}], "^", "2"}], " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1.", " ", "Gds$M8"}], "+", 
+         RowBox[{"0.781903", " ", "gm$M21"}]}], ")"}], "^", "2"}], " ", 
+      RowBox[{"gm$M21", "^", "5"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"1.", " ", "Gds$M8"}], "+", 
+        RowBox[{"1.18083", " ", "gm$M21"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"6.1304", " ", "Gds$M8"}], "+", 
+        RowBox[{"2", " ", "gm$M23"}]}], ")"}], " ", 
+      RowBox[{"gm$M35", "^", "4"}], " ", 
+      RowBox[{"gm$M8", "^", "10"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"0.", "+", 
+        RowBox[{"219.319", " ", 
+         RowBox[{"Gds$M8", "^", "4"}], " ", 
+         RowBox[{"gm$M8", "^", "2"}]}], "+", 
+        RowBox[{"127.197", " ", 
+         RowBox[{"Gds$M8", "^", "3"}], " ", 
+         RowBox[{"gm$M8", "^", "3"}]}], "+", 
+        RowBox[{"23.2625", " ", 
+         RowBox[{"Gds$M8", "^", "2"}], " ", 
+         RowBox[{"gm$M8", "^", "4"}]}], "+", 
+        RowBox[{"12.693", " ", "Gds$M8", " ", 
+         RowBox[{"gm$M8", "^", "5"}]}], "+", 
+        RowBox[{"2.44592", " ", 
+         RowBox[{"gm$M8", "^", "6"}]}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"0.437424", " ", 
+         RowBox[{"gm$M21", "^", "6"}]}], "+", 
+        RowBox[{"44.1695", " ", 
+         RowBox[{"Gds$M8", "^", "7"}], " ", "R2"}], "+", 
+        RowBox[{"Gds$M8", " ", 
+         RowBox[{"gm$M21", "^", "5"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"4.68307", "+", 
+           RowBox[{"2.18012", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "2"}], " ", 
+         RowBox[{"gm$M21", "^", "4"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"19.9207", "+", 
+           RowBox[{"23.3404", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "3"}], " ", 
+         RowBox[{"gm$M21", "^", "3"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"43.4356", "+", 
+           RowBox[{"99.2846", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "6"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"8.86226", "+", 
+           RowBox[{"165.275", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "4"}], " ", 
+         RowBox[{"gm$M21", "^", "2"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"52.1044", "+", 
+           RowBox[{"216.483", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "5"}], " ", "gm$M21", " ", 
+         RowBox[{"(", 
+          RowBox[{"33.1611", "+", 
+           RowBox[{"259.688", " ", "gm$M21", " ", "R2"}]}], ")"}]}]}], ")"}], 
+      " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"0.00295696", " ", 
+         RowBox[{"gm$M35", "^", "5"}]}], "+", 
+        RowBox[{"1.", " ", 
+         RowBox[{"Gds$M8", "^", "6"}], " ", "R3"}], "+", 
+        RowBox[{"Gds$M8", " ", 
+         RowBox[{"gm$M35", "^", "4"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.0220635", "+", 
+           RowBox[{"0.00510503", " ", "gm$M35", " ", "R3"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "2"}], " ", 
+         RowBox[{"gm$M35", "^", "3"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.0630016", "+", 
+           RowBox[{"0.0380915", " ", "gm$M35", " ", "R3"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "3"}], " ", 
+         RowBox[{"gm$M35", "^", "2"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.201198", "+", 
+           RowBox[{"0.108769", " ", "gm$M35", " ", "R3"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "4"}], " ", "gm$M35", " ", 
+         RowBox[{"(", 
+          RowBox[{"0.571109", "+", 
+           RowBox[{"0.347357", " ", "gm$M35", " ", "R3"}]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"Gds$M8", "^", "5"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.579225", "+", 
+           RowBox[{"0.985989", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], ")"}],
+       " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"4.984", " ", "Gds$M8"}], "+", 
+        RowBox[{"C1", " ", "s"}]}], ")"}], " ", "VIN"}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"432279.", " ", 
+       RowBox[{"Gds$M8", "^", "2"}], " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"1.", " ", "Gds$M8"}], "+", 
+          RowBox[{"0.325524", " ", "gm$M21"}]}], ")"}], "^", "2"}], " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"1.", " ", "Gds$M8"}], "+", 
+          RowBox[{"0.781903", " ", "gm$M21"}]}], ")"}], "^", "2"}], " ", 
+       RowBox[{"gm$M21", "^", "5"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1.", " ", "Gds$M8"}], "+", 
+         RowBox[{"1.18083", " ", "gm$M21"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "6.1304"}], " ", "Gds$M8"}], "-", 
+         RowBox[{"2", " ", "gm$M23"}]}], ")"}], " ", 
+       RowBox[{"gm$M35", "^", "4"}], " ", 
+       RowBox[{"gm$M8", "^", "10"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"0.", "+", 
+         RowBox[{"219.319", " ", 
+          RowBox[{"Gds$M8", "^", "4"}], " ", 
+          RowBox[{"gm$M8", "^", "2"}]}], "+", 
+         RowBox[{"127.197", " ", 
+          RowBox[{"Gds$M8", "^", "3"}], " ", 
+          RowBox[{"gm$M8", "^", "3"}]}], "+", 
+         RowBox[{"23.2625", " ", 
+          RowBox[{"Gds$M8", "^", "2"}], " ", 
+          RowBox[{"gm$M8", "^", "4"}]}], "+", 
+         RowBox[{"12.693", " ", "Gds$M8", " ", 
+          RowBox[{"gm$M8", "^", "5"}]}], "+", 
+         RowBox[{"2.44592", " ", 
+          RowBox[{"gm$M8", "^", "6"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"0.437424", " ", 
+          RowBox[{"gm$M21", "^", "6"}]}], "+", 
+         RowBox[{"44.1695", " ", 
+          RowBox[{"Gds$M8", "^", "7"}], " ", "R2"}], "+", 
+         RowBox[{"Gds$M8", " ", 
+          RowBox[{"gm$M21", "^", "5"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"4.68307", "+", 
+            RowBox[{"2.18012", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "2"}], " ", 
+          RowBox[{"gm$M21", "^", "4"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"19.9207", "+", 
+            RowBox[{"23.3404", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "3"}], " ", 
+          RowBox[{"gm$M21", "^", "3"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"43.4356", "+", 
+            RowBox[{"99.2846", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "6"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"8.86226", "+", 
+            RowBox[{"165.275", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "4"}], " ", 
+          RowBox[{"gm$M21", "^", "2"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"52.1044", "+", 
+            RowBox[{"216.483", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "5"}], " ", "gm$M21", " ", 
+          RowBox[{"(", 
+           RowBox[{"33.1611", "+", 
+            RowBox[{"259.688", " ", "gm$M21", " ", "R2"}]}], ")"}]}]}], ")"}],
+        " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"0.00295696", " ", 
+          RowBox[{"gm$M35", "^", "5"}], " ", "R1"}], "+", 
+         RowBox[{"1.", " ", 
+          RowBox[{"Gds$M8", "^", "6"}], " ", "R1", " ", "R3"}], "+", 
+         RowBox[{"Gds$M8", " ", 
+          RowBox[{"gm$M35", "^", "3"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"0.00525291", "+", 
+            RowBox[{"gm$M35", " ", "R1", " ", 
+             RowBox[{"(", 
+              RowBox[{"0.0220635", "+", 
+               RowBox[{"0.00510503", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], 
+           ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "2"}], " ", 
+          RowBox[{"gm$M35", "^", "2"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"0.0430985", "+", 
+            RowBox[{"0.00906886", " ", "gm$M35", " ", "R3"}], "+", 
+            RowBox[{"gm$M35", " ", "R1", " ", 
+             RowBox[{"(", 
+              RowBox[{"0.0630016", "+", 
+               RowBox[{"0.0380915", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], 
+           ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "3"}], " ", "gm$M35", " ", 
+          RowBox[{"(", 
+           RowBox[{"0.125818", "+", 
+            RowBox[{"0.0744072", " ", "gm$M35", " ", "R3"}], "+", 
+            RowBox[{"gm$M35", " ", "R1", " ", 
+             RowBox[{"(", 
+              RowBox[{"0.201198", "+", 
+               RowBox[{"0.108769", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], 
+           ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "4"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"0.127606", "+", 
+            RowBox[{"0.217218", " ", "gm$M35", " ", "R3"}], "+", 
+            RowBox[{"gm$M35", " ", "R1", " ", 
+             RowBox[{"(", 
+              RowBox[{"0.571109", "+", 
+               RowBox[{"0.347357", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], 
+           ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"Gds$M8", "^", "5"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"0.220304", " ", "R3"}], "+", 
+            RowBox[{"R1", " ", 
+             RowBox[{"(", 
+              RowBox[{"0.579225", "+", 
+               RowBox[{"0.985989", " ", "gm$M35", " ", "R3"}]}], ")"}]}]}], 
+           ")"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4.984", " ", "Gds$M8"}], "+", 
+         RowBox[{"C1", " ", "s"}]}], ")"}]}], "+", 
+      RowBox[{"0.947", " ", 
+       RowBox[{"Gds$M8", "^", "2"}], " ", 
+       RowBox[{"gm$M21", "^", "5"}], " ", 
+       RowBox[{"gm$M35", "^", "4"}], " ", 
+       RowBox[{"gm$M8", "^", "10"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Gds$M8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "0.76048"}], " ", "Gds$M8"}], "-", 
+            RowBox[{"0.898", " ", "gm$M21"}]}], ")"}], " ", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"1.98279", " ", 
+              RowBox[{"Gds$M8", "^", "2"}]}], "+", 
+             RowBox[{"2.19579", " ", "Gds$M8", " ", "gm$M21"}], "+", 
+             RowBox[{"0.504676", " ", 
+              RowBox[{"gm$M21", "^", "2"}]}]}], ")"}], "^", "2"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"6.1304", " ", "Gds$M8"}], "+", 
+            RowBox[{"2", " ", "gm$M23"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"3.36", " ", "Gds$M8"}], "+", 
+            RowBox[{"3.2198", " ", "gm$M8"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"0.437424", " ", 
+             RowBox[{"gm$M21", "^", "6"}]}], "+", 
+            RowBox[{"44.1695", " ", 
+             RowBox[{"Gds$M8", "^", "7"}], " ", "R2"}], "+", 
+            RowBox[{"Gds$M8", " ", 
+             RowBox[{"gm$M21", "^", "5"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"4.68307", "+", 
+               RowBox[{"2.18012", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"Gds$M8", "^", "2"}], " ", 
+             RowBox[{"gm$M21", "^", "4"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"19.9207", "+", 
+               RowBox[{"23.3404", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"Gds$M8", "^", "3"}], " ", 
+             RowBox[{"gm$M21", "^", "3"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"43.4356", "+", 
+               RowBox[{"99.2846", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"Gds$M8", "^", "6"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"8.86226", "+", 
+               RowBox[{"165.275", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"Gds$M8", "^", "4"}], " ", 
+             RowBox[{"gm$M21", "^", "2"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"52.1044", "+", 
+               RowBox[{"216.483", " ", "gm$M21", " ", "R2"}]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"Gds$M8", "^", "5"}], " ", "gm$M21", " ", 
+             RowBox[{"(", 
+              RowBox[{"33.1611", "+", 
+               RowBox[{"259.688", " ", "gm$M21", " ", "R2"}]}], ")"}]}]}], 
+           ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "503.628"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"1.", " ", 
+                RowBox[{"Gds$M8", "^", "2"}]}], "+", 
+               RowBox[{"0.613725", " ", "Gds$M8", " ", "gm$M35"}], "+", 
+               RowBox[{"0.0991255", " ", 
+                RowBox[{"gm$M35", "^", "2"}]}]}], ")"}], " ", "gm$M8", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"187.112", " ", 
+                RowBox[{"Gds$M8", "^", "5"}]}], "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "4"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"73.6564", " ", "gm$M35"}], "-", 
+                  RowBox[{"1390.03", " ", "gm$M8"}]}], ")"}]}], "+", 
+               RowBox[{"Gds$M8", " ", 
+                RowBox[{"gm$M35", "^", "2"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "231.969"}], " ", "gm$M35"}], "-", 
+                  RowBox[{"43.9491", " ", "gm$M8"}]}], ")"}], " ", "gm$M8"}], 
+               "-", 
+               RowBox[{"59.1408", " ", 
+                RowBox[{"gm$M35", "^", "3"}], " ", 
+                RowBox[{"gm$M8", "^", "2"}]}], "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "3"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"23.2044", " ", 
+                   RowBox[{"gm$M35", "^", "2"}]}], "-", 
+                  RowBox[{"547.184", " ", "gm$M35", " ", "gm$M8"}], "-", 
+                  RowBox[{"354.39", " ", 
+                   RowBox[{"gm$M8", "^", "2"}]}]}], ")"}]}], "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "2"}], " ", "gm$M35", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"31.2253", " ", 
+                   RowBox[{"gm$M35", "^", "2"}]}], "-", 
+                  RowBox[{"172.382", " ", "gm$M35", " ", "gm$M8"}], "-", 
+                  RowBox[{"139.505", " ", 
+                   RowBox[{"gm$M8", "^", "2"}]}]}], ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"0.579225", "+", 
+               RowBox[{"1.", " ", "Gds$M8", " ", "R3"}]}], ")"}]}], "-", 
+            RowBox[{"15.2835", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "16.6906"}], " ", 
+                RowBox[{"Gds$M8", "^", "2"}]}], "-", 
+               RowBox[{"9.31096", " ", "Gds$M8", " ", "gm$M35"}], "-", 
+               RowBox[{"1.892", " ", 
+                RowBox[{"gm$M35", "^", "2"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "229.105"}], " ", 
+                RowBox[{"Gds$M8", "^", "2"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"1.", " ", "Gds$M8"}], "+", 
+                  RowBox[{"0.393649", " ", "gm$M35"}]}], ")"}], " ", "gm$M8", 
+                " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"1.", " ", 
+                   RowBox[{"Gds$M8", "^", "2"}]}], "-", 
+                  RowBox[{"7.42887", " ", "Gds$M8", " ", "gm$M8"}], "-", 
+                  RowBox[{"1.894", " ", 
+                   RowBox[{"gm$M8", "^", "2"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"0.579225", "+", 
+                  RowBox[{"1.", " ", "Gds$M8", " ", "R3"}]}], ")"}]}], "-", 
+               RowBox[{"16.5039", " ", 
+                RowBox[{"gm$M35", "^", "2"}], " ", "gm$M8", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"Gds$M8", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "1.406"}], " ", "Gds$M8"}], "-", 
+                    RowBox[{"0.946", " ", "gm$M35"}]}], ")"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"Gds$M8", "+", "gm$M8"}], ")"}]}], "+", 
+                  RowBox[{"0.947", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"1.406", " ", "Gds$M8"}], "+", 
+                    RowBox[{"0.946", " ", "gm$M35"}]}], ")"}], " ", "gm$M8", 
+                   " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"8.9006", " ", "Gds$M8"}], "+", 
+                    RowBox[{"2", " ", "gm$M8"}]}], ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"1", "+", 
+                  RowBox[{"1.72644", " ", "Gds$M8", " ", "R3"}]}], ")"}]}]}], 
+              ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"4.984", " ", "Gds$M8"}], "+", 
+            RowBox[{"C1", " ", "s"}]}], ")"}]}], "+", 
+         RowBox[{"gm$M8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "1.4"}], " ", 
+             RowBox[{"Gds$M8", "^", "2"}]}], "-", 
+            RowBox[{"9.82887", " ", "Gds$M8", " ", "gm$M8"}], "-", 
+            RowBox[{"1.894", " ", 
+             RowBox[{"gm$M8", "^", "2"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"gm$M21", " ", 
+             RowBox[{"gm$M23", "^", "2"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"1.", " ", "Gds$M8"}], "+", 
+               RowBox[{"0.393649", " ", "gm$M35"}]}], ")"}], " ", 
+             RowBox[{"gm$M35", "^", "2"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "16.6906"}], " ", 
+                RowBox[{"Gds$M8", "^", "2"}]}], "-", 
+               RowBox[{"9.31096", " ", "Gds$M8", " ", "gm$M35"}], "-", 
+               RowBox[{"1.892", " ", 
+                RowBox[{"gm$M35", "^", "2"}]}]}], ")"}], " ", 
+             RowBox[{"gm$M8", "^", "3"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "7.10543"}], "*", 
+                RowBox[{"10", "^", 
+                 RowBox[{"-", "15"}]}], " ", 
+                RowBox[{"gm$M21", "^", "10"}]}], "-", 
+               RowBox[{"4043.12", " ", 
+                RowBox[{"Gds$M8", "^", "11"}], " ", "R2"}], "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "7"}], " ", 
+                RowBox[{"gm$M21", "^", "3"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "36888.6"}], "-", 
+                  RowBox[{"199961.", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "8"}], " ", 
+                RowBox[{"gm$M21", "^", "2"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "20692.6"}], "-", 
+                  RowBox[{"183853.", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "6"}], " ", 
+                RowBox[{"gm$M21", "^", "4"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "40120.7"}], "-", 
+                  RowBox[{"138123.", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "9"}], " ", "gm$M21", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "6378.09"}], "-", 
+                  RowBox[{"103132.", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "5"}], " ", 
+                RowBox[{"gm$M21", "^", "5"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "27713.2"}], "-", 
+                  RowBox[{"60705.3", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "10"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "811.22"}], "-", 
+                  RowBox[{"31788.4", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "4"}], " ", 
+                RowBox[{"gm$M21", "^", "6"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "12180."}], "-", 
+                  RowBox[{"16387.9", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "3"}], " ", 
+                RowBox[{"gm$M21", "^", "7"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "3288.11"}], "-", 
+                  RowBox[{"2469.6", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{
+                RowBox[{"Gds$M8", "^", "2"}], " ", 
+                RowBox[{"gm$M21", "^", "8"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "495.506"}], "-", 
+                  RowBox[{"158.649", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+               "+", 
+               RowBox[{"Gds$M8", " ", 
+                RowBox[{"gm$M21", "^", "9"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "31.8316"}], "-", 
+                  RowBox[{"2.84217", "*", 
+                   RowBox[{"10", "^", 
+                    RowBox[{"-", "14"}]}], " ", "gm$M21", " ", "R2"}]}], 
+                 ")"}]}]}], ")"}], " ", "R3"}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"1.", " ", "Gds$M8"}], "+", 
+               RowBox[{"1.18083", " ", "gm$M21"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"6.1304", " ", "Gds$M8"}], "+", 
+               RowBox[{"2", " ", "gm$M23"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "257866."}], " ", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"1.", " ", "Gds$M8"}], "+", 
+                   RowBox[{"0.325524", " ", "gm$M21"}]}], ")"}], "^", "2"}], 
+                " ", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"1.", " ", "Gds$M8"}], "+", 
+                   RowBox[{"0.781903", " ", "gm$M21"}]}], ")"}], "^", "2"}], 
+                " ", 
+                RowBox[{"gm$M21", "^", "2"}], " ", 
+                RowBox[{"gm$M35", "^", "2"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"1.", " ", 
+                   RowBox[{"Gds$M8", "^", "2"}]}], "+", 
+                  RowBox[{"0.557857", " ", "Gds$M8", " ", "gm$M35"}], "+", 
+                  RowBox[{"0.113357", " ", 
+                   RowBox[{"gm$M35", "^", "2"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"1.", " ", 
+                   RowBox[{"Gds$M8", "^", "6"}]}], "+", 
+                  RowBox[{"Gds$M8", " ", 
+                   RowBox[{"gm$M21", "^", "4"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"0.0721575", " ", "gm$M21"}], "+", 
+                    RowBox[{"0.224145", " ", "gm$M35"}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "5"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2.68727", " ", "gm$M21"}], "+", 
+                    RowBox[{"0.393649", " ", "gm$M35"}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "2"}], " ", 
+                   RowBox[{"gm$M21", "^", "3"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"0.569402", " ", "gm$M21"}], "+", 
+                    RowBox[{"0.70741", " ", "gm$M35"}]}], ")"}]}], "+", 
+                  RowBox[{"0.0284047", " ", 
+                   RowBox[{"gm$M21", "^", "5"}], " ", "gm$M35"}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "4"}], " ", "gm$M21", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"3.00772", " ", "gm$M21"}], "+", 
+                    RowBox[{"1.05784", " ", "gm$M35"}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "3"}], " ", 
+                   RowBox[{"gm$M21", "^", "2"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"1.79706", " ", "gm$M21"}], "+", 
+                    RowBox[{"1.18399", " ", "gm$M35"}]}], ")"}]}]}], ")"}], 
+                " ", 
+                RowBox[{"gm$M8", "^", "3"}], " ", "R2", " ", "R3"}], "-", 
+               RowBox[{"1.09553", "*", 
+                RowBox[{"10", "^", "6"}], " ", "Gds$M8", " ", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"1.", " ", 
+                    RowBox[{"Gds$M8", "^", "2"}]}], "+", 
+                   RowBox[{"1.10743", " ", "Gds$M8", " ", "gm$M21"}], "+", 
+                   RowBox[{"0.254529", " ", 
+                    RowBox[{"gm$M21", "^", "2"}]}]}], ")"}], "^", "2"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"0.437424", " ", 
+                   RowBox[{"gm$M21", "^", "6"}]}], "+", 
+                  RowBox[{"44.1695", " ", 
+                   RowBox[{"Gds$M8", "^", "7"}], " ", "R2"}], "+", 
+                  RowBox[{"Gds$M8", " ", 
+                   RowBox[{"gm$M21", "^", "5"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"4.68307", "+", 
+                    RowBox[{"2.18012", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "2"}], " ", 
+                   RowBox[{"gm$M21", "^", "4"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"19.9207", "+", 
+                    RowBox[{"23.3404", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "3"}], " ", 
+                   RowBox[{"gm$M21", "^", "3"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"43.4356", "+", 
+                    RowBox[{"99.2846", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "6"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"8.86226", "+", 
+                    RowBox[{"165.275", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "4"}], " ", 
+                   RowBox[{"gm$M21", "^", "2"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"52.1044", "+", 
+                    RowBox[{"216.483", " ", "gm$M21", " ", "R2"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "5"}], " ", "gm$M21", " ", 
+                   RowBox[{"(", 
+                    RowBox[{"33.1611", "+", 
+                    RowBox[{"259.688", " ", "gm$M21", " ", "R2"}]}], 
+                    ")"}]}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "0.00116677"}], " ", 
+                   RowBox[{"gm$M35", "^", "5"}], " ", "gm$M8"}], "+", 
+                  RowBox[{"5.60722", "*", 
+                   RowBox[{"10", "^", 
+                    RowBox[{"-", "19"}]}], " ", 
+                   RowBox[{"gm$M35", "^", "3"}], " ", 
+                   RowBox[{"gm$M8", "^", "3"}]}], "+", 
+                  RowBox[{"1.", " ", 
+                   RowBox[{"Gds$M8", "^", "7"}], " ", "R3"}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "6"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{"0.579225", "+", 
+                    RowBox[{"0.985989", " ", "gm$M35", " ", "R3"}], "-", 
+                    RowBox[{"0.394583", " ", "gm$M8", " ", "R3"}]}], ")"}]}], 
+                  "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "5"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.228553"}], " ", "gm$M8"}], "+", 
+                    RowBox[{"gm$M35", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"0.571109", "+", 
+                    RowBox[{"0.347357", " ", "gm$M35", " ", "R3"}], "-", 
+                    RowBox[{"0.389055", " ", "gm$M8", " ", "R3"}]}], 
+                    ")"}]}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "4"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.22535"}], " ", "gm$M35", " ", "gm$M8"}], 
+                    "+", 
+                    RowBox[{"0.108769", " ", 
+                    RowBox[{"gm$M35", "^", "3"}], " ", "R3"}], "+", 
+                    RowBox[{"1.9659", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "17"}]}], " ", 
+                    RowBox[{"gm$M8", "^", "3"}], " ", "R3"}], "+", 
+                    RowBox[{
+                    RowBox[{"gm$M35", "^", "2"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"0.201198", "-", 
+                    RowBox[{"0.137061", " ", "gm$M8", " ", "R3"}]}], 
+                    ")"}]}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "3"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.0793893"}], " ", 
+                    RowBox[{"gm$M35", "^", "2"}], " ", "gm$M8"}], "+", 
+                    RowBox[{"1.55497", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "17"}]}], " ", 
+                    RowBox[{"gm$M8", "^", "3"}]}], "+", 
+                    RowBox[{"0.0380915", " ", 
+                    RowBox[{"gm$M35", "^", "4"}], " ", "R3"}], "+", 
+                    RowBox[{"1.88687", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "17"}]}], " ", "gm$M35", " ", 
+                    RowBox[{"gm$M8", "^", "3"}], " ", "R3"}], "+", 
+                    RowBox[{
+                    RowBox[{"gm$M35", "^", "3"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"0.0630016", "-", 
+                    RowBox[{"0.0429184", " ", "gm$M8", " ", "R3"}]}], 
+                    ")"}]}]}], ")"}]}], "+", 
+                  RowBox[{
+                   RowBox[{"Gds$M8", "^", "2"}], " ", "gm$M35", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.0248594"}], " ", 
+                    RowBox[{"gm$M35", "^", "2"}], " ", "gm$M8"}], "+", 
+                    RowBox[{"1.42921", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "17"}]}], " ", 
+                    RowBox[{"gm$M8", "^", "3"}]}], "+", 
+                    RowBox[{"0.00510503", " ", 
+                    RowBox[{"gm$M35", "^", "4"}], " ", "R3"}], "+", 
+                    RowBox[{"6.46602", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "18"}]}], " ", "gm$M35", " ", 
+                    RowBox[{"gm$M8", "^", "3"}], " ", "R3"}], "+", 
+                    RowBox[{
+                    RowBox[{"gm$M35", "^", "3"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"0.0220635", "-", 
+                    RowBox[{"0.0150303", " ", "gm$M8", " ", "R3"}]}], 
+                    ")"}]}]}], ")"}]}], "+", 
+                  RowBox[{"Gds$M8", " ", 
+                   RowBox[{"gm$M35", "^", "2"}], " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.0087059"}], " ", 
+                    RowBox[{"gm$M35", "^", "2"}], " ", "gm$M8"}], "+", 
+                    RowBox[{"4.79771", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "18"}]}], " ", 
+                    RowBox[{"gm$M8", "^", "3"}]}], "+", 
+                    RowBox[{"7.64388", "*", 
+                    RowBox[{"10", "^", 
+                    RowBox[{"-", "19"}]}], " ", "gm$M35", " ", 
+                    RowBox[{"gm$M8", "^", "3"}], " ", "R3"}], "+", 
+                    RowBox[{
+                    RowBox[{"gm$M35", "^", "3"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"0.00295696", "-", 
+                    RowBox[{"0.00201436", " ", "gm$M8", " ", "R3"}]}], 
+                    ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"4.984", " ", "Gds$M8"}], "+", 
+               RowBox[{"C1", " ", "s"}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+     ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.916424796079877*^9, 
+  3.916424800825555*^9}},ExpressionUUID->"4b97ccae-1669-4c00-a849-\
+422cfe652b30"]
+},
+WindowSize->{1428, 735.75},
+WindowMargins->{{1152, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.3 para Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"60c4cc9d-3872-4787-9c5c-1293e5abfb0a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 84869, 2026, 2336, "Input",ExpressionUUID->"0273da65-d647-43d6-8e69-0c7ccf018422"],
+Cell[85430, 2048, 34318, 811, 866, "Input",ExpressionUUID->"4b97ccae-1669-4c00-a849-422cfe652b30"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
